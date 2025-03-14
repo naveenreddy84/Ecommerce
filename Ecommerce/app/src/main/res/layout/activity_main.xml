@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/phone"
+    tools:context=".Authentication.MainActivity">
+
+   <TextView
+       android:id="@+id/title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Login As ....."
+       android:paddingTop="300dp"
+       android:paddingLeft="80dp"
+       android:textColor="@color/black"
+       android:textSize="30sp"
+       android:textStyle="bold"
+       />
+
+    <Button
+        android:id="@+id/userbtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+         android:layout_marginTop="50dp"
+        android:layout_marginStart="35dp"
+        android:text="User"
+        android:backgroundTint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/adminbtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        android:text="Admin"
+        android:backgroundTint="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/gotoregisterpage"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        android:text="Dont have account? Register"
+        android:backgroundTint="@color/black"
+
+
+        />
+
+
+
+
+
+</LinearLayout>

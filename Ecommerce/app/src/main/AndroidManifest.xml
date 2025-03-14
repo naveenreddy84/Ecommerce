@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ecommerce">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ecommerce"
+        tools:targetApi="31">
+        <activity
+            android:name=".users.OrderConfirmedPage"
+            android:exported="false" />
+        <activity
+            android:name=".users.StripePaymentPage"
+            android:exported="false" />
+        <activity
+            android:name=".users.UserProductDetailsPage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFiles.AdminProductViewPage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFiles.AdminProductUpdateFinalPage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFiles.AdminProductUpdatePage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFiles.AdminDeleteProductPage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFiles.AdminUploadPage"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.UserDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFiles.AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".users.UserRegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.ecommerce.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

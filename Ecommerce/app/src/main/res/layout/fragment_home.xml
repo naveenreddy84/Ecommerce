@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/phone"
+    android:padding="16dp">
+
+
+<TextView
+android:id="@+id/welcomeTextView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Welcome Admin...!"
+android:textStyle="bold"
+android:textSize="25sp"
+    android:textColor="@color/black"
+    android:layout_marginTop="130dp"/>
+
+
+<Button
+android:id="@+id/AddButton"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Add Products --->"
+android:backgroundTint="@color/black"
+android:textColor="@android:color/white"
+android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:id="@+id/ViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Products --->"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/UpdateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Products --->"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/DeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Products --->"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
